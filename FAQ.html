@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shoestore</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script type="text/JavaScript" src="js/atur1.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <input type="checkbox" name="" id="toggler" />
+      <label for="toggler" class="fas fa-bars"></label>
+
+      <a href="#" class="logo">Shoe<span>store</span></a>
+
+      <!-- navbar -->
+      <nav class="navbar">
+        <a href="index.html#beranda">Beranda</a>
+        <a href="index.html#tentangkami">Tentang kami</a>
+        <a href="index.html#produk">Produk</a>
+        <a href="index.html#promo">Promo</a>
+        <a href="index.html#ulasan">Ulasan</a>
+        <a href="index.html#kontak">Kontak</a>
+        <a href="FAQ.html">FAQ</a>
+      </nav>
+
+      <div class="icons">
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-shopping-cart"></a>
+        <a href="#" class="fas fa-user"></a>
+      </div>
+    </header>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq">
+      <h1 class="heading">Pertanyaan <span>Umum</span></h1>
+      <div class="faq-container">
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>Apakah semua produk Shoestore original?</h3>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            Ya, semua produk yang kami jual 100% original dan bergaransi resmi
+            dari merek masing-masing seperti Adidas, Nike, dan Puma.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>Berapa lama waktu pengiriman pesanan?</h3>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            Waktu pengiriman tergantung lokasi tujuan. Untuk area Jawa, biasanya
+            1–3 hari kerja. Luar pulau bisa 3–7 hari kerja.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>Apakah Shoestore menyediakan layanan retur?</h3>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            Tentu! Kami memberikan garansi retur 10 hari jika produk tidak
+            sesuai, cacat, atau terjadi kesalahan pengiriman.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>Bagaimana cara melacak pesanan saya?</h3>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            Setelah pesanan dikirim, kami akan mengirimkan nomor resi ke email
+            atau WhatsApp kamu. Kamu bisa melacaknya melalui situs ekspedisi
+            yang digunakan.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>Apakah Shoestore menerima pembayaran COD?</h3>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            Ya, kami menerima metode pembayaran COD (Cash On Delivery) untuk
+            area tertentu yang mendukung layanan tersebut.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>Bagaimana jika ukuran sepatu tidak sesuai?</h3>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            Jangan khawatir! Kamu bisa menukar ukuran sepatu dalam waktu
+            maksimal 7 hari setelah barang diterima, asalkan kondisi masih baru
+            dan belum dipakai.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>quick links</h3>
+          <a href="index.html#beranda">Beranda</a>
+          <a href="index.html#tentangkami">Tentang kami</a>
+          <a href="index.html#produk">Produk</a>
+          <a href="index.html#promo">Promo</a>
+          <a href="index.html#ulasan">Ulasan</a>
+          <a href="index.html#kontak">Kontak</a>
+        </div>
+
+        <div class="box">
+          <h3>extra links</h3>
+          <a href="#">Akun saya</a>
+          <a href="#">Orderan saya</a>
+          <a href="#">Favorit saya</a>
+        </div>
+
+        <div class="box">
+          <h3>locations</h3>
+          <a href="#">Semarang</a>
+          <a href="#">Jakarta</a>
+          <a href="#">Surabaya</a>
+          <a href="#">Bali</a>
+          <a href="#">Bandung</a>
+        </div>
+
+        <div class="box">
+          <h3>contact info</h3>
+          <a href="#">+62 856-0211-0120</a>
+          <a href="#">shoestore@gmail.com</a>
+          <a href="#">Semarang, Indonesia - 50222</a>
+        </div>
+      </div>
+
+      <div class="credit">
+        &copy; A12.2024.07192 - Farrel Raditya N
+        <span id="clock"></span>
+      </div>
+    </section>
+
+    <!-- JS -->
+    <script>
+      const faqItems = document.querySelectorAll(".faq-item");
+      faqItems.forEach((item) => {
+        item.addEventListener("click", () => {
+          item.classList.toggle("active");
+        });
+      });
+    </script>
+  </body>
+</html>
